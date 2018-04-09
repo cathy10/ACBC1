@@ -36,11 +36,10 @@ end
  PopAttr(2,1).Sd=12;PopAttr(2,2).Sd=10;PopAttr(2,3).Sd=10;
 % most responde when most vulnerable are in need, some responde when most vulnerable are unknown 
  PopAttr(3,1).Mean=90;PopAttr(3,2).Mean=-130;PopAttr(3,3).Mean=40;
- PopAttr(3,1).Sd=8;PopAttr(3,2).Sd=12;PopAttr(3,3).Sd=12;
-% most FBOs have local parterns, almost none work with outide organization
-% that they haven't worked with before
- PopAttr(4,1).Mean=140;PopAttr(4,2).Mean=60;PopAttr(4,3).Mean=-200;
- PopAttr(4,1).Sd=5;PopAttr(4,2).Sd=15;PopAttr(4,3).Sd=5;
+ PopAttr(3,1).Sd=2;PopAttr(3,2).Sd=10;PopAttr(3,3).Sd=30;
+% v
+ PopAttr(4,1).Mean=20;PopAttr(4,2).Mean=10;PopAttr(4,3).Mean=-30;
+ PopAttr(4,1).Sd=20;PopAttr(4,2).Sd=10;PopAttr(4,3).Sd=30;
 
  %% Set Respondent Partworth Functions
 for n=1:N
