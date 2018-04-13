@@ -45,7 +45,8 @@ end
  %% Set Respondent Partworth Functions
 for n=1:N
     Respondent(n,1)=respondent;  %%create respondents
-    for i=1:NA
+    for i=1:NA %%initialization of mustHaves/ unacceptable levels detected, where
+        %%0=not detected
     Respondent(n,1).revealedMusthave(i,1)=0; %%used in screening stage
     Respondent(n,1).revealedUnaccept(i,1)=0;
     end
@@ -77,11 +78,11 @@ end
 
 %% GENERATE SURVEY SIMULATION PROFILES
 T1=3; %% Total number of profiles before musthave/unacceptable are checked
-Amin=1; %%min number of attributes to vary from BYO
+Amin=2; %%min number of attributes to vary from BYO
 Amax=2; %%max number of attributes to vary from BYO
 
 %% Simulate Screening Stage
-viewedProfiles(1,1)=0;viewedProfiles(2,1)=0;viewedProfiles(3,1)=0;
+viewedProfiles(1,1)=0;viewedProfiles(2,1)=0;viewedProfiles(3,1)=0;viewedProfiles(4,1) =0;
 T1=5;  %% Number of quesions in the screening stage
 for n=1:N
   for t=1:T1  %%keep track of questions
